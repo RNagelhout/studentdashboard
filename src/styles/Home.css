@@ -1,0 +1,78 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.uploadCSVButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.uploadCSVButtonContainer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  width: 90%;
+}
+
+.uploadCSVButtonContainer a .uploadCSVButton {
+  color: #016170;
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 18px;
+  list-style: none;
+  border: solid #086b60 2px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  width: 80%;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+}
+
+.uploadCSVButtonContainer a .uploadCSVButton:hover {
+  background-color: #282c34;
+  color: #016170;
+}
+
+::-webkit-scrollbar {
+  background-color: #76767660;
+  border-radius: 100vw;
+  height: 1.2em;
+  margin: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #282c34;
+  margin: 3px;
+  border-radius: 100vw;
+  border: solid #086b60 2px;
+}
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,41 @@
+@import "./_variables.scss";
+
+.uploadPageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%;
+    .MyDropZoneContainer{
+        width: 100%;
+        display: block;
+        .MyDropzone {
+            background-color: $DarkMode-background-Color;
+            color: $DarkMode-text-Color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            height: 40vh;
+            min-width: 75px;
+            border: $DarkMode-border-Style;
+            outline: none;
+            padding: 5%
+        }
+    }
+    .uploadPageButtonContainer{
+        height: 27vh;
+        a {
+            width: 100% ;
+            display: flex;
+            align-content: center;
+            text-decoration: none;
+            .uploadPageButton {
+                @include buttonSpecs;
+                cursor: pointer;
+            }
+        }
+    }
+}

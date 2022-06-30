@@ -1,0 +1,267 @@
+.App-header {
+  background-color: #282c34;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #efefef;
+}
+
+.App-header .logo {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 200px;
+  min-width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.App-header .logo img {
+  margin-top: 15px;
+  width: 12vh;
+  height: 12vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.App-header .headerName {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid #086b60 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 5vh;
+  height: 20px;
+  background-color: #282c34;
+}
+
+.navbar .navbarItem {
+  margin: 3px;
+  color: #efefef;
+  text-decoration: none;
+}
+
+.navbar .navbarItem :hover {
+  color: #016170;
+}
+
+.appContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #282c34;
+  height: 100vh;
+}
+
+.appContainer .sideBar {
+  background-color: #282c34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #efefef;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  height: 100%;
+  width: 10%;
+  min-width: 150px;
+  margin: 5px;
+  margin-top: 0;
+  padding: 10px;
+  padding-top: 2px;
+}
+
+.appContainer .sideBar .listContainer {
+  background-color: #282c34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 150px;
+  width: 100%;
+  height: 59vh;
+  border: solid #086b60 2px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.appContainer .sideBar .listContainer .titles {
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.appContainer .sideBar .listContainer .studentListView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.appContainer .sideBar .listContainer .studentListView .studentNameList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.appContainer .sideBar .listContainer .studentListView .studentNameList .listItem {
+  color: #016170;
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 18px;
+  list-style: none;
+  border: solid #086b60 2px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  width: 80%;
+  text-decoration: none;
+}
+
+.appContainer .sideBar .listContainer .studentListView .studentNameList .listItem:hover {
+  background-color: #282c34;
+  color: #016170;
+}
+
+.appContainer .sideBar .listContainer .studentListView .studentNameList .studentProp {
+  color: #016170;
+  text-decoration: none;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.appContainer .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 80%;
+  background-color: #282c34;
+}
+
+.appContainer .contentContainer .grafic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  border: solid #086b60 2px;
+  background-color: #282c34;
+  width: auto;
+  height: 80%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+.appContainer .contentContainer .grafic .barChart {
+  width: 100%;
+  height: 100%;
+  color: #efefef;
+  overflow-x: scroll;
+}
+
+.appContainer .contentContainer .grafic .barChart .VictoryContainer svg {
+  color: #efefef;
+}
+/*# sourceMappingURL=HeaderSidebarContentContainer.css.map */

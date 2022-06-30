@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+/* .appContainer {
+  background-color: #282c34;
+  display: flex;
+  margin: 0;
+  padding: 0;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* 
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: #efefef;
+}
+
+.logo {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  min-width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  margin-top: 15px;
+  width: 12vh;
+  height: 12vh;
+  object-fit: cover;
+}
+
+.headerName {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar {
+  display: flex;
+  justify-content:center;
+  height: 5vh;
+  background-color: #282c34;
+}
+
+.navbarItem {
+  margin: 3px;
+  color: #efefef;
+  text-decoration: none;
+}
+
+.navbarItem:hover {
+  color: #016170;
+}
+
+.content {
+  width: 100%;
+}
+
+.homePage {
+  display: flex;
+  width: 100%;
+  height: 82vh;
+}
+
+.sideBar {
+  background-color: #282c34;
+  display: flex;
+  color: #efefef;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  height: 60vh;
+  width: 200px;
+  min-width: 150px;
+  margin: 5px;
+  margin-top: 0;
+  padding: 10px;
+  padding-top: 2px;
+}
+
+.MyDropzone {
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  cursor: pointer;
+  height: 10vh;
+  width: 100%;
+  min-width: 75px;
+  border: 2px dashed #086b60;
+  outline: none;
+}
+
+.listContainer{
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  width: 100%;
+  height: 59vh;
+  border: solid #086b60 2px;
+  margin-bottom: 5px;
+  padding:5px
+}
+
+.studentListView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.studentNameList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.titles {
+  text-transform: uppercase;
+  text-decoration:underline;
+  display: flex;
+  justify-content:center;
+  padding: 10px;
+}
+
+.listItem {
+  color: #016170;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.rem;
+  list-style: none;
+  border: solid #016170 1px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  width: 80%
+}
+
+.studentProp {
+  color: #016170;
+  text-decoration: none;
+  width: fill;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px
+}
+
+.listItem:hover {
+  border: solid #00E0C6 1px;
+  background-color: #01617034;
+  color: #016170;
+  transform: scale(1.03);
+  transition: 300ms transform ease-in-out;
+}
+.grafic {
+  display: flex;
+  justify-content: start;
+  overflow: hidden;
+  border: solid #1c5851  2px;
+  background-color: #282c34;
+
+  height: 79vh;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+.barChart {
+  width: 500vh;
+  color: #efefef;
+  margin: 5px;
+  padding: 2%;
+  overflow-x: scroll;
+}
+
+.VictoryContainer {
+  width: 300vh;
+  height: 100vh ;
+  
+}
+
+svg {
+  color: #efefef;
+  width: 300% !important;
+}
+
+.uploadPageButton {
+  width: 200px;
+  height: 200px;
+}
+
+::-webkit-scrollbar {
+  background-color: #76767660;
+  border-radius: 100vw;
+  height: 1.2em;
+  margin: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #282c34;
+  margin: 3px;
+  border-radius: 100vw;
+  border: 2px solid #1c5851;
+} */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

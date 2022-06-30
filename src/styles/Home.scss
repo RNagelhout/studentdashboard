@@ -1,0 +1,43 @@
+@import "./_variables.scss";
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+.uploadCSVButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 5px;
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 90%;
+    .uploadCSVButton {
+      @include buttonSpecs;
+      text-align: center;
+      cursor: pointer;
+      margin: 0;
+    }
+  }
+}
+ 
+  ::-webkit-scrollbar {
+    background-color: #76767660;
+    border-radius: 100vw;
+    height: 1.2em;
+    margin: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $DarkMode-background-Color;
+    margin: 3px;
+    border-radius: 100vw;
+    border: $DarkMode-border-Style;
+  }

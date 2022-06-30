@@ -1,0 +1,155 @@
+@import "./_variables.scss";
+
+  .App-header {
+    background-color: $DarkMode-background-Color;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $DarkMode-text-Color;
+    .logo {
+        position:sticky;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        max-width: 200px;
+        min-width: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+        img {
+            margin-top: 15px;
+            width: 12vh;
+            height: 12vh;
+            object-fit: cover;
+        }
+    }
+    .headerName {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    }
+    .navbar {
+      display: flex;
+      border:$DarkMode-border-Style;
+      justify-content:center;
+      align-items: center;
+      min-height: 5vh;
+      height: 20px;
+      background-color: $DarkMode-background-Color;
+      .navbarItem {
+          margin: 3px;
+          color: $DarkMode-text-Color;
+          text-decoration: none;
+          :hover {
+          color: #016170;     
+          }
+      } 
+    }
+    .appContainer{
+        display: flex;
+        flex-direction: row;
+        background-color: $DarkMode-background-Color;
+        height: 100vh;
+        .sideBar {
+            background-color: $DarkMode-background-Color;
+            display: flex;
+            color: $DarkMode-text-Color;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-content: flex-start;
+            height: 100%;
+            width: 10%;
+            min-width: 150px;
+            margin: 5px;
+            margin-top: 0;
+            padding: 10px;
+            padding-top: 2px;
+            .listContainer{
+                background-color: $DarkMode-background-Color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 150px;
+                width: 100%;
+                height: 59vh;
+                border: $DarkMode-border-Style;
+                margin-bottom: 5px;
+                padding:5px;
+                .titles {
+                    text-transform: uppercase;
+                    text-decoration:underline;
+                    display: flex;
+                    justify-content:center;
+                    padding: 10px;
+                    
+                }
+                .studentListView {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    .studentNameList {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        overflow-y: scroll;
+                        cursor: pointer;
+                        .listItem {
+                        @include buttonSpecs
+                        }
+                        .studentProp {
+                        color: $DarkMode-listItem-Color;
+                        text-decoration: none;
+                        width: stretch;
+                        text-align: center;
+                        padding-top: 2px;
+                        padding-bottom: 2px
+                        }
+                    }
+                }
+            }
+        }
+        .contentContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            height: 80%;
+            background-color: $DarkMode-background-Color;
+            .grafic {
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                border: $DarkMode-border-Style;
+                background-color: $DarkMode-background-Color;
+                width: auto;
+                height: 80%;
+                margin-right: 2%;
+                margin-bottom: 5%;
+                .barChart {
+                    width: 100%;
+                    height: 100%;
+                    color: $DarkMode-text-Color;
+                    overflow-x: scroll;
+                    .VictoryContainer {
+                       
+                        svg {
+                            color: $DarkMode-text-Color;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }

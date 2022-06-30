@@ -1,0 +1,86 @@
+.uploadPageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 20%;
+}
+
+.uploadPageContainer .MyDropZoneContainer {
+  width: 100%;
+  display: block;
+}
+
+.uploadPageContainer .MyDropZoneContainer .MyDropzone {
+  background-color: #282c34;
+  color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 40vh;
+  min-width: 75px;
+  border: solid #086b60 2px;
+  outline: none;
+  padding: 5%;
+}
+
+.uploadPageContainer .uploadPageButtonContainer {
+  height: 27vh;
+}
+
+.uploadPageContainer .uploadPageButtonContainer a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-decoration: none;
+}
+
+.uploadPageContainer .uploadPageButtonContainer a .uploadPageButton {
+  color: #016170;
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 18px;
+  list-style: none;
+  border: solid #086b60 2px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  width: 80%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.uploadPageContainer .uploadPageButtonContainer a .uploadPageButton:hover {
+  background-color: #282c34;
+  color: #016170;
+}
+/*# sourceMappingURL=UploadPage.css.map */

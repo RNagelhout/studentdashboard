@@ -1,0 +1,31 @@
+$DarkMode-background-Color: #282c34;
+$DarkMode-text-Color: #efefef;
+$DarkMode-border-Style: solid #086b60 2px;
+$DarkMode-listItem-Color: #016170;
+$DarkMode-Hover-ListItem-border: solid #00E0C6 1px;
+$DarkMode-Hover-ListItem-text-Color: #016170;
+$FontSize: 18px;
+$Margin2px: 2px;
+$Padding2px: 2px;
+
+@mixin buttonSpecs {
+            color: $DarkMode-listItem-Color;
+            background-color: $DarkMode-text-Color;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            font-size: $FontSize;
+            list-style: none;
+            border: $DarkMode-border-Style;
+            margin-bottom: 2px;
+            margin-top: 2px;
+            width: 80%;
+            text-decoration: none;
+            &:hover {
+                background-color: $DarkMode-background-Color;
+                color: $DarkMode-listItem-Color;
+                // transform: scale(1.03);
+                // transition: 300ms transform ease-in-out;
+                }
+
+            }

@@ -1,0 +1,15 @@
+@import "./_variables.scss";
+
+
+    .studentInfoBlock {
+
+        visibility: hidden;
+
+        position: absolute;
+        color: $DarkMode-text-Color;
+        border: $DarkMode-border-Style;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+  }

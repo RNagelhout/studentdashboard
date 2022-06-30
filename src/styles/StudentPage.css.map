@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGI,AAAA,iBAAiB,CAAC;EAEd,UAAU,EAAE,MAAM;EAElB,QAAQ,EAAE,QAAQ;EAClB,KAAK,ECPS,OAAO;EDQrB,MAAM,ECPU,KAAK,CAAC,OAAO,CAAC,GAAG;EDQjC,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;CAE5B",
+    "sources": [
+        "StudentPage.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "StudentPage.css"
+}
