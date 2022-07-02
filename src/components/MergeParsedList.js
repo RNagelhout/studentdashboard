@@ -6,35 +6,33 @@ import {v4 as uuidv4} from "uuid"
 
 function MergeParseList() {
 
-const dispatch = useDispatch()
-const parsedList = useSelector((state) => state.lists.value)
-const checkboxNameList = useSelector((state) => state.checkboxNameList.value)
+  const dispatch = useDispatch()
+  const parsedList = useSelector((state) => state.lists.value)
 
-const StudentNameList = parsedList
-    .slice(0, -1)  
-    .filter(n => n) // filtering out the empty values
-    .reduce( (students , student) => { 
-            const {name} = student
-            const studentIndex = students.findIndex( student => student.name === name)
-            if (studentIndex === -1 )  { 
-                students.push({  
-                  id: uuidv4(),
-                  name: student.name, 
-                  last_name: student.last_name, 
-                  adress: student.adress,
-                  email: student.email, 
-                  gender: student.gender, 
-                  avatar: student.avatar,          
-                })
-              
-             }
-            return students
-            }, []) 
+  const StudentNameList = parsedList
+      .slice(0, -1)  
+      .filter(n => n) // filtering out the empty values
+      .reduce( (students , student) => { 
+              const {name} = student
+              const studentIndex = students.findIndex( student => student.name === name)
+              if (studentIndex === -1 )  { 
+                  students.push({  
+                    id: uuidv4(),
+                    name: student.name, 
+                    last_name: student.last_name, 
+                    adress: student.adress,
+                    email: student.email, 
+                    gender: student.gender, 
+                    avatar: student.avatar,          
+                  })   
+              }
+              return students
+              }, []) 
 
-const projectList = [] 
+  const projectList = [] 
   const names = parsedList.map((student) => student.name);
   const uniqueNames = [...new Set(names)];
-  
+
   uniqueNames.forEach((student) => {
     let temp = [];
     temp.name = student;
@@ -45,21 +43,15 @@ const projectList = []
       }
     });
     projectList.push(temp)
-
   });
 
   Array.isArray(projectList)
-  
-  
-  const FinalDataList = StudentNameList.map((student, i) => {
-    
+
+  const FinalDataList = StudentNameList.map((student, i) => { 
     return {...student, ...projectList[i]} 
   })
 
   Array.isArray(FinalDataList)
-  
-  
-
 
   return (
     <div className="uploadPageButtonContainer">

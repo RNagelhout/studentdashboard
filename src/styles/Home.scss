@@ -1,12 +1,6 @@
 @import "./_variables.scss";
   
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  
+
 .uploadCSVButtonContainer {
   display: flex;
   justify-content: center;

@@ -1,8 +1,9 @@
-.studentInfoBlock {
-  visibility: hidden;
-  position: absolute;
-  color: #efefef;
-  border: solid #086b60 2px;
+.appContainer {
+  position: relative;
+}
+
+.appContainer .studentInfoBlock {
+  position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,8 +11,74 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  min-width: 250px;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  background-color: #016170;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: #efefef;
+  border: solid #086b60 2px;
+  border-radius: 40px;
+  margin: 15px;
+  font-size: 1.2em;
+  left: 200px;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.appContainer .studentInfoBlock .studentInfo {
+  width: 80%;
+  max-width: 200px;
+}
+
+.appContainer .studentInfoBlock .studentAvatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.appContainer .studentInfoBlock .studentAvatar img {
+  width: 60%;
+  border-radius: 40px;
+}
+
+.appContainer .grafic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 70%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  overflow: hidden;
+  border: solid #086b60 2px;
+  background-color: #282c34;
+}
+
+.appContainer .grafic .barChart {
+  color: #efefef;
+}
+
+.appContainer .grafic .barChart .VictoryContainer svg {
+  color: #efefef;
 }
 /*# sourceMappingURL=StudentPage.css.map */

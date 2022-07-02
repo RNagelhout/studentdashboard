@@ -1,7 +1,6 @@
 import './App.css'
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
-
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -15,18 +14,14 @@ function App() {
     <Router>
       <div>
         <Header/>
-        <Navbar/>
-        
+        <Navbar/>  
         <div className='appContainer'>
-          {/* <Profile />
-          <Login/> */}
           <Switch>
             <Route exact path="/">
               <SideBar />
               <Home/>
             </Route>
             <Route path="/student/">
-              <SideBar />
               <StudentPage/>
             </Route>
             <Route exact path="/UploadPage">

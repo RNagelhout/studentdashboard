@@ -1,14 +1,15 @@
 .App-header {
   background-color: #282c34;
-  height: 100px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: calc(10px + 2vmin);
   color: #efefef;
 }
@@ -16,7 +17,7 @@
 .App-header .logo {
   position: -webkit-sticky;
   position: sticky;
-  margin-left: 5px;
+  margin-left: 50px;
   margin-right: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,15 +26,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 200px;
-  min-width: 150px;
+  min-width: 160px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .App-header .logo img {
-  margin-top: 15px;
-  width: 12vh;
-  height: 12vh;
+  width: 10vh;
+  height: 10vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -58,9 +58,10 @@
   display: -ms-flexbox;
   display: flex;
   border: solid #086b60 2px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -71,11 +72,13 @@
 
 .navbar .navbarItem {
   margin: 3px;
+  font-size: 1.2em;
+  text-transform: uppercase;
   color: #efefef;
   text-decoration: none;
 }
 
-.navbar .navbarItem :hover {
+.navbar .navbarItem:hover {
   color: #016170;
 }
 
@@ -83,12 +86,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   background-color: #282c34;
-  height: 100vh;
+  height: 82vh;
 }
 
 .appContainer .sideBar {
@@ -108,11 +107,12 @@
           justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  height: 100%;
-  width: 10%;
-  min-width: 150px;
-  margin: 5px;
-  margin-top: 0;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  width: 14%;
+  margin: 3px;
+  margin-top: 10px;
   padding: 10px;
   padding-top: 2px;
 }
@@ -134,7 +134,7 @@
           align-items: center;
   min-width: 150px;
   width: 100%;
-  height: 59vh;
+  height: 70vh;
   border: solid #086b60 2px;
   margin-bottom: 5px;
   padding: 5px;
@@ -150,6 +150,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .appContainer .sideBar .listContainer .studentListView {
@@ -180,6 +182,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 90%;
   overflow-y: scroll;
   cursor: pointer;
 }
@@ -211,13 +214,18 @@
   color: #016170;
 }
 
+.appContainer .sideBar .listContainer .studentListView .studentNameList .checkbox {
+  margin-left: 5px;
+}
+
 .appContainer .sideBar .listContainer .studentListView .studentNameList .studentProp {
   color: #016170;
   text-decoration: none;
   width: -webkit-fill-available;
   width: -moz-available;
   width: stretch;
-  text-align: center;
+  margin-left: 10px;
+  text-align: start;
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -226,16 +234,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: auto;
-  height: 80%;
-  background-color: #282c34;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .appContainer .contentContainer .grafic {
@@ -245,20 +247,27 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
-  border: solid #086b60 2px;
-  background-color: #282c34;
-  width: auto;
-  height: 80%;
+  margin-top: 70px;
+  height: 85%;
+  min-width: 80%;
+  width: 400%;
   margin-right: 2%;
   margin-bottom: 5%;
+  overflow: hidden;
+  background-color: #282c34;
 }
 
 .appContainer .contentContainer .grafic .barChart {
-  width: 100%;
-  height: 100%;
+  height: 500px;
   color: #efefef;
-  overflow-x: scroll;
+}
+
+.appContainer .contentContainer .grafic .barChart .ChartTitle {
+  text-align: center;
+}
+
+.appContainer .contentContainer .grafic .barChart .VictoryContainer {
+  height: 400px;
 }
 
 .appContainer .contentContainer .grafic .barChart .VictoryContainer svg {

@@ -11,10 +11,10 @@ function StudentPage() {
         <div className="contentContainer">
             <StudentInfoBlock />
             <div className='grafic'>
-                {/* <BarChart/> */}
+                <BarChart/>
             </div>
         </div>
     )
 }
 
-export default StudentPage
+export default StudentPage 

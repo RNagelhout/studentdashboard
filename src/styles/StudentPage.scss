@@ -1,15 +1,59 @@
 @import "./_variables.scss";
 
-
+.appContainer {
+    position: relative;
     .studentInfoBlock {
-
-        visibility: hidden;
-
-        position: absolute;
-        color: $DarkMode-text-Color;
-        border: $DarkMode-border-Style;
+        position:static;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 15%;
+        min-width: 250px;
+        height:stretch;
+        background-color: $DarkMode-Hover-ListItem-text-Color;
+        justify-content: start;
+        color: $DarkMode-text-Color;
+        border:$DarkMode-border-Style;
+        border-radius: 40px;
+        margin: 15px;
+        font-size: 1.2em;
+        left: 200px;
+        transition: all 0.7s ease;
+        .studentInfo {         
+            width: 80%;
+            max-width: 200px;
+            }
+        .studentAvatar {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;             
+            img {
+            width: 60%;
+            border-radius: 40px;
+            }             
+        }
+    }
+    .grafic {
+        display: flex;
         justify-content: center;
-        
-  }
+        align-items: center;
+        height: 100%;
+        width: 70%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        overflow: hidden;
+        border: $DarkMode-border-Style;
+        background-color: $DarkMode-background-Color;
+        .barChart {
+            color: $DarkMode-text-Color;
+            .VictoryContainer {
+                svg {
+                    color: $DarkMode-text-Color;    
+                }
+            }
+        }
+    }
+
+}

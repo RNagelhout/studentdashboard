@@ -3,15 +3,19 @@ import {useSelector} from "react-redux"
 
 function StudentInfoBlock() {
 
-    const currentStudent = useSelector((state) => state.currentStudent.value)
+    const checkboxNameList = useSelector((state) => state.checkboxNameList.value)
 
     return(
         <div className='studentInfoBlock'>
-            <img src={currentStudent.student.avatar}/>
-            <p>{currentStudent.student.name} {" "} {currentStudent.student.last_name}</p>
-            <p>{currentStudent.student.gender}</p>
-            <p>{currentStudent.student.adress}</p>
-            <p>{currentStudent.student.email}</p>
+            <div className="studentAvatar">
+                <img src={checkboxNameList[0].student.avatar}/>
+            </div>
+            <div className="studentInfo">
+                <p>Name: {checkboxNameList[0].student.name} {" "} {checkboxNameList[0].student.last_name}</p>
+                <p>Gender: {checkboxNameList[0].student.gender}</p> 
+                <p>Adress: {checkboxNameList[0].student.adress}</p>
+                <p>E-mail: {checkboxNameList[0].student.email}</p> 
+            </div>
         </div>
     )
 }
