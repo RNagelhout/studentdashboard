@@ -67,6 +67,7 @@
             align-content: flex-start;
             height: stretch;
             width: 14%;
+            min-width: 150px;
             margin: 3px;
             margin-top: 10px;
             padding: 10px;
@@ -134,7 +135,6 @@
                 justify-content: center;
                 margin-top: 70px;
                 height: 85%;
-                min-width:80%;
                 width: 400%;
                 margin-right: 2%;
                 margin-bottom: 5%;
