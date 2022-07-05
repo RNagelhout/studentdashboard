@@ -16,26 +16,25 @@
           align-items: center;
   width: 15%;
   min-width: 250px;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: stretch;
-  background-color: #016170;
+  height: 70vh;
+  background-color: #494e570e;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  color: #efefef;
+  color: #fcfcfc;
   border: solid #086b60 2px;
   border-radius: 40px;
   margin: 15px;
-  font-size: 1.2em;
+  font-size: 1em;
   left: 200px;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 
 .appContainer .studentInfoBlock .studentInfo {
-  width: 80%;
+  width: 70%;
   max-width: 200px;
+  line-height: 1.5;
 }
 
 .appContainer .studentInfoBlock .studentAvatar {
@@ -71,14 +70,15 @@
   margin-bottom: 5%;
   overflow: hidden;
   border: solid #086b60 2px;
-  background-color: #282c34;
+  background-color: #494e570e;
+  border-radius: 40px;
 }
 
 .appContainer .grafic .barChart {
-  color: #efefef;
+  color: #fcfcfc;
 }
 
 .appContainer .grafic .barChart .VictoryContainer svg {
-  color: #efefef;
+  color: #fcfcfc;
 }
 /*# sourceMappingURL=StudentPage.css.map */

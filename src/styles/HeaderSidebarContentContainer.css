@@ -1,5 +1,5 @@
 .App-header {
-  background-color: #282c34;
+  background-color: #494e5727;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,31 +11,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: calc(10px + 2vmin);
-  color: #efefef;
-}
-
-.App-header .logo {
-  position: -webkit-sticky;
-  position: sticky;
-  margin-left: 50px;
-  margin-right: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 200px;
-  min-width: 160px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.App-header .logo img {
-  width: 10vh;
-  height: 10vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  color: #fcfcfc;
 }
 
 .App-header .headerName {
@@ -61,20 +37,20 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  padding-left: 100px;
+  padding-left: 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 5vh;
   height: 20px;
-  background-color: #282c34;
+  background-color: #494e570e;
 }
 
 .navbar .navbarItem {
   margin: 3px;
   font-size: 1.2em;
   text-transform: uppercase;
-  color: #efefef;
+  color: #fcfcfc;
   text-decoration: none;
 }
 
@@ -86,16 +62,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #282c34;
   height: 82vh;
 }
 
+.appContainer .uploadCSVButton {
+  padding: 5px;
+}
+
 .appContainer .sideBar {
-  background-color: #282c34;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #efefef;
+  color: #fcfcfc;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -119,7 +97,9 @@
 }
 
 .appContainer .sideBar .listContainer {
-  background-color: #282c34;
+  border: solid #086b60 2px;
+  background-color: #494e570e;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,8 +115,8 @@
           align-items: center;
   min-width: 150px;
   width: 100%;
-  height: 70vh;
-  border: solid #086b60 2px;
+  height: 60vh;
+  margin-top: 10px;
   margin-bottom: 5px;
   padding: 5px;
 }
@@ -153,6 +133,8 @@
   padding: 10px;
   -ms-flex-line-pack: center;
       align-content: center;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .appContainer .sideBar .listContainer .studentListView {
@@ -185,12 +167,13 @@
   width: 100%;
   height: 90%;
   overflow-y: scroll;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .appContainer .sideBar .listContainer .studentListView .studentNameList .listItem {
   color: #016170;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,6 +184,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   list-style: none;
   border: solid #086b60 2px;
@@ -208,15 +194,30 @@
   margin-top: 2px;
   width: 80%;
   text-decoration: none;
+  border-radius: 20px;
 }
 
 .appContainer .sideBar .listContainer .studentListView .studentNameList .listItem:hover {
-  background-color: #282c34;
+  background-color: #494e570e;
   color: #016170;
 }
 
 .appContainer .sideBar .listContainer .studentListView .studentNameList .checkbox {
   margin-left: 5px;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #086b60;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.appContainer .sideBar .listContainer .studentListView .studentNameList .checkbox:checked {
+  background-color: #086b60;
 }
 
 .appContainer .sideBar .listContainer .studentListView .studentNameList .studentProp {
@@ -227,8 +228,8 @@
   width: stretch;
   margin-left: 10px;
   text-align: start;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .appContainer .contentContainer {
@@ -248,18 +249,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 70px;
-  height: 85%;
-  width: 400%;
+  margin-top: 5%;
+  height: 75vh;
+  width: 200%;
   margin-right: 2%;
   margin-bottom: 5%;
   overflow: hidden;
-  background-color: #282c34;
+  background-color: #494e570e;
 }
 
 .appContainer .contentContainer .grafic .barChart {
   height: 500px;
-  color: #efefef;
+  color: #fcfcfc;
 }
 
 .appContainer .contentContainer .grafic .barChart .ChartTitle {
@@ -271,6 +272,6 @@
 }
 
 .appContainer .contentContainer .grafic .barChart .VictoryContainer svg {
-  color: #efefef;
+  color: #fcfcfc;
 }
 /*# sourceMappingURL=HeaderSidebarContentContainer.css.map */

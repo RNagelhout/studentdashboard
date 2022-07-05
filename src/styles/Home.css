@@ -27,7 +27,7 @@
 
 .uploadCSVButtonContainer a .uploadCSVButton {
   color: #016170;
-  background-color: #efefef;
+  background-color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +38,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   list-style: none;
   border: solid #086b60 2px;
@@ -45,13 +48,14 @@
   margin-top: 2px;
   width: 80%;
   text-decoration: none;
+  border-radius: 20px;
   text-align: center;
   cursor: pointer;
   margin: 0;
 }
 
 .uploadCSVButtonContainer a .uploadCSVButton:hover {
-  background-color: #282c34;
+  background-color: #494e570e;
   color: #016170;
 }
 
@@ -63,7 +67,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #282c34;
+  background-color: #494e570e;
   margin: 3px;
   border-radius: 100vw;
   border: solid #086b60 2px;

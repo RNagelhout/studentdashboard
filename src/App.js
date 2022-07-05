@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/App.css'
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import Header from './components/Header';
@@ -12,7 +12,7 @@ function App() {
   
   return (
     <Router>
-      <div>
+      <div className='fullpage'>
         <Header/>
         <Navbar/>  
         <div className='appContainer'>
