@@ -1,14 +1,16 @@
 import { VictoryBar, VictoryChart, VictoryAxis, VictoryGroup, VictoryZoomContainer, VictoryLegend } from "victory"
 import {useSelector} from "react-redux"
 import {v4 as uuidv4} from "uuid"
+import {useSpring, animated} from "react-spring"
 
 function BarChart() {
+    const fade = useSpring({from: { opacity: 0,}, opacity: 1 })
     const checkboxNameList = useSelector((state) => state.checkboxNameList.value)
 
     const DataList = checkboxNameList
     
     let RawChartList = []
-
+    
     if (checkboxNameList.length === 0) {
         RawChartList = []
     } else {
@@ -46,7 +48,7 @@ function BarChart() {
     }  
    
     return( 
-        <div className="barChart">
+        <animated.div className="barChart" style={fade}>
             <h1 className="ChartTitle">Student Rating / Students Average</h1>
             <VictoryChart
             height={800}
@@ -109,7 +111,7 @@ function BarChart() {
                     />
                 </VictoryGroup>
             </VictoryChart>
-        </div>
+        </animated.div>
 
     )
 }

@@ -1,12 +1,13 @@
-import logo from "../SVG/logo.png"
+import {useSpring, animated} from "react-spring"
 
 function Header() {
+    const fade = useSpring({from: { opacity: 0,}, opacity: 1 })
     return(
-        <header className="App-header">
-            <div className="headerName">
+        <animated.header className="App-header" style={fade}>
+            <div className="headerName" >
                 <h1>Student Dashboard</h1>
             </div>
-        </header>
+        </animated.header>
     )
 }
 

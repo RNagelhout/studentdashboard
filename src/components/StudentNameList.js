@@ -1,18 +1,29 @@
-import {useState} from "react"
 import {useSelector, useDispatch} from "react-redux"
-import { currentStudent } from "../features/currentStudent"
 import { checkboxNameList } from "../features/checkboxNameList"
 import { Link } from "react-router-dom"
+import {useSpring, animated} from "react-spring"
 
 
 function StudentNameList() {
+
+  const fadeSlice = useSpring({
+    from: { opacity: 0, marginBottom: 800}, 
+    to: { opacity: 1, marginBottom: 0 },
+    config: {
+      delay: 50, 
+      duration: 900, 
+      tension: 170,
+      mass: 15,
+      friction: 96,velocity: 10,
+      precision: 0.01
+    }
+  })
 
   const dispatch = useDispatch()
   const MergedList = useSelector((state) => state.MergedList.value)
   
   let nameList = []
   
- 
   //Making a list from students whos checkbox is checked
   const CheckedNames = (e) => {
       const checked = e.target.checked
@@ -51,7 +62,7 @@ function StudentNameList() {
    // creates for every name an listItem with a checkbox and a <Link> to each personal page with the name of the student.
   const SideBarNames = MergedList      
       .map((student) => { 
-      return  <li key={student.id} className="listItem">
+      return  <animated.li key={student.id} className="listItem" style={fadeSlice}>
                 <input className="checkbox" 
                     type="checkbox" 
                     id={student.name}
@@ -64,13 +75,14 @@ function StudentNameList() {
                   >
                     {student.name}
                 </Link> 
-              </li>
+              </animated.li>
       })
   return (
     <div className='listContainer'> 
         <div className='titles'><p className='titleItem'>Students</p></div>
         <div className='studentListView'>
           <ul className="studentNameList">
+            
               {SideBarNames}
           </ul>
        </div>
