@@ -1,5 +1,17 @@
-.appContainer {
-  background-color: #282c34;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gruppo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fullpage {
+  background: transparent url(/src/IMG/Background.jpg) no-repeat 0 0;
+  background-size: cover;
+  display: 100vh;
+  font-family: 'Comfortaa', cursive;
+}
+
+.fullpage .appContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +23,7 @@
   padding: 0;
 }
 
-.appContainer .content {
+.fullpage .appContainer .content {
   width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

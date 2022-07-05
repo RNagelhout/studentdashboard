@@ -9,19 +9,21 @@
         align-items: center;
         width: 15%;
         min-width: 250px;
-        height:stretch;
-        background-color: $DarkMode-Hover-ListItem-text-Color;
+        height:70vh;
+        background-color: $DarkMode-background-Color;
         justify-content: start;
         color: $DarkMode-text-Color;
         border:$DarkMode-border-Style;
         border-radius: 40px;
         margin: 15px;
-        font-size: 1.2em;
+        font-size: 1em;
+        
         left: 200px;
         transition: all 0.7s ease;
         .studentInfo {         
-            width: 80%;
+            width: 70%;
             max-width: 200px;
+            line-height: 1.5;
             }
         .studentAvatar {
             display: flex;
@@ -46,6 +48,7 @@
         overflow: hidden;
         border: $DarkMode-border-Style;
         background-color: $DarkMode-background-Color;
+        border-radius: 40px;
         .barChart {
             color: $DarkMode-text-Color;
             .VictoryContainer {

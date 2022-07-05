@@ -1,8 +1,19 @@
 
 @import "./_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gruppo&display=swap');
 
+* {
+     margin: 0;
+    padding: 0;
+}
+
+.fullpage {
+    background: transparent url(/src/IMG/Background.jpg) no-repeat 0 0;
+    background-size: cover;
+    display: 100vh;
+    font-family:'Comfortaa', cursive;
+   
 .appContainer {
-    background-color: $DarkMode-background-Color;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -10,4 +21,5 @@
     .content {
         width: 100%;
     }
+} 
 }

@@ -49,8 +49,8 @@ function BarChart() {
         <div className="barChart">
             <h1 className="ChartTitle">Student Rating / Students Average</h1>
             <VictoryChart
-            height={1000}
-            width={2700}
+            height={800}
+            width={2500}
             domainPadding={40}
             containerComponent={<VictoryZoomContainer zoomDomain={{x: [0, 10], y: [0,5]}}/>}
             >
