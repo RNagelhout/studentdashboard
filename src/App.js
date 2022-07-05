@@ -1,21 +1,24 @@
 import './styles/App.css'
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import StudentPage from './components/StudentPage';
-import UploadPage from './components/UploadPage';
+import Header from './components/Header'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import StudentPage from './components/StudentPage'
+import UploadPage from './components/UploadPage'
 import SideBar from "./components/SideBar"
+import {useSpring, animated} from "react-spring"
 
-function App() {
+
+const App = () => {
+  const fade = useSpring({from: { opacity: 0,}, opacity: 1 })
   
   return (
     <Router>
-      <div className='fullpage'>
+      <animated.div className='fullpage' style={fade}>
         <Header/>
         <Navbar/>  
-        <div className='appContainer'>
+        <animated.div className='appContainer'  style={fade}>
           <Switch>
             <Route exact path="/">
               <SideBar />
@@ -28,8 +31,8 @@ function App() {
               <UploadPage/>
             </Route>
           </Switch>
-        </div>
-      </div> 
+        </animated.div>
+      </animated.div> 
     </Router>
   );
 }
